@@ -12,6 +12,17 @@
     font-size: 25px;
 }
 
+/* Estilos a Nosotros */
+.nosotros-css {
+    background-color: #ee0a0a;
+    color: #f2eff5;
+    font-size: large;
+    font-family: 'Libre Bodoni', serif
+}
+
+
+
+/* Estilos a mi Footer */
 .pie-de-pagina {
     width:100%;
     background-color: #c50606;
