@@ -6,61 +6,78 @@
     text-decoration: none;
     list-style: none;
 }
-body {
+
+.nav-item {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.pie-de-pagina {
+    width:100%;
+    background-color: #c50606;
+}
+.pie-de-pagina .grupo-1 {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0;
+}
+.pie-de-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-de-pagina .grupo-1 .box figure img {
+    width: 150px;
+}
+.pie-de-pagina .grupo-1 h2 {
+ color: #f2eff5;
+ margin-bottom: 25px;
+ font-size: 20px;
+
+}
+.pie-de-pagina .grupo-1 ul {
+    color: #f2eff5;
+    margin-bottom: 10px;
+}
+ .pie-de-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fffffff5;
+    margin-right: 10px;
     background-color: #ee0a0a;
-    font-family:'Roboto', sans-serif; 
-    margin: 0%;
+    text-align: center;
+    transition: all 300ms ease-in-out;
 }
-ul {
-    position: fixed;
-    width: 50%;
-    height: 100vh;
-    background-color: rgb(251, 246, 246);
-    top: 10vh;
-    left: -100%;
-    text-align: left;
-    transition: all .5s;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
+.pie-de-pagina .grupo-1 .red-social a:hover {
+    color: #070707;
 }
-nav {
-    justify-content: flex-start;
+.pie-de-pagina .grupo-2 {
+    background-color: #ee0a0a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #f2eff5;
 }
-.drawer {
-    display: block;
-}
-nav h1 {
-    margin-left: 1rem;
-}
-nav ul li {
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    border-bottom: solid 1rem rgb(248, 241, 241);
-}
-
-
-/* Arranco mi media queries */
-@media screen and (min-width: 320px) {
-    nav ul li a {
-    color: #ffffff;
+.pie-de-pagina .grupo-2 small {
     font-size: 15px;
-   padding: 15px;
+
 }
-.drawer {
-    font-size: 1rem;
-    color:#ffffff;
-    float: left;
-    cursor: pointer;
-    display:none;
-    margin-left: 1rem;
-    border: solid 1,5px rebeccapurple;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-#ckbox:checked ~ .menu-box {
-    left: 0%;
+
+
+
+@media screen and (min-width: 768px) { 
+    .pie-de-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0;
 }
 }
