@@ -20,6 +20,92 @@
     font-family: 'Libre Bodoni', serif
 }
 
+/* Estilos en mi Header en Home */  
+
+.home-header div {
+    background-color: #ee0a0a;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:100px;
+    
+}
+
+.home-header div {
+    text-align: center;
+  
+}
+
+.home-header h1 {
+    color:#f2eff5;
+     background-color: #c50606;
+    font-size: 60px;
+    font-weight:bold;
+    font-family:'Send Flowers',cursive ;
+    text-align: center;
+}
+
+/* Estilos en mi Main home */
+.mensaje-inicial {
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 200;
+    padding: 10px 25px;
+    background-color: #ee0a0a;
+    color:#f2eff5;
+      
+}
+.mensaje-inicial span{
+    font-size: 30px;
+    font-family:'Send Flowers' ;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.seccion-2 div {
+    display: inline-block;
+    padding: 30px ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.embed-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56,100%;
+}
+.container {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    
+}
+.player {
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; 
+    
+}
+.formulario {
+    width: 200px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0, 4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+
 
 
 /* Estilos a mi Footer */
@@ -119,6 +205,26 @@
     grid-column-start: span 2;
 }
 
+/* Trabajo en Viandas */
+.menu-vianda {
+    background-color: #ee0a0a;
+    color: #f2eff5;
+    font-size: 15px;
+ 
+}
+.galeria-vianda{
+    display: block;
+    margin:10px auto;
+}
+
+.foto-vianda {
+    width: 30%;
+    align-self: center;
+}
+.light {
+    width: 100%;
+    height: 50%;
+}
 
 @media screen and (min-width: 768px) { 
     .pie-de-pagina .grupo-1 {
