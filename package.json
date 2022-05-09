@@ -1,0 +1,24 @@
+{
+  "name": "proyectoabumatie",
+  "version": "1.0.0",
+  "description": "2da Entrega de mi proyecto final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rotiseria-css":"node-sass --include-path scss scss/main.scss css/maincss.css","watch-css": "nodemon -e scss -x \"npm run rotiseria-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naduazul/ProyectoAbuMatie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naduazul/ProyectoAbuMatie/issues"
+  },
+  "homepage": "https://github.com/Naduazul/ProyectoAbuMatie#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
