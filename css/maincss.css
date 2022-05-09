@@ -1,0 +1,187 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+.nav-item {
+  padding: 20px;
+  font-size: 25px; }
+
+/* Estilos a Nosotros */
+.nosotros-css {
+  background-color: #ee0a0a;
+  color: #f2eff5;
+  font-size: large;
+  font-family: 'Libre Bodoni', serif; }
+
+/* Estilos en mi Header en Home */
+.home-header div {
+  background-color: #ee0a0a;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100px;
+  text-align: center; }
+  .home-header div h1 {
+    color: #f2eff5;
+    background-color: #c50606;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Send Flowers',cursive;
+    text-align: center; }
+
+/* Estilos en mi Main home */
+.mensaje-inicial {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding: 10px 25px;
+  background-color: #ee0a0a;
+  color: #f2eff5; }
+  .mensaje-inicial span {
+    font-size: 30px;
+    font-family: 'Send Flowers';
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.seccion-2 div {
+  display: inline-block;
+  padding: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold; }
+
+.embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56,100%; }
+  .embed-container .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; }
+
+.video {
+  position: relative;
+  width: 100%; }
+  .video .player {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; }
+
+.formulario {
+  width: 200px;
+  margin: auto;
+  background-color: red;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 12px; }
+
+/* Estilos a mi Footer */
+.pie-de-pagina {
+  width: 100%;
+  background-color: #c50606; }
+  .pie-de-pagina .grupo-1 {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0; }
+    .pie-de-pagina .grupo-1 h2 {
+      color: #f2eff5;
+      margin-bottom: 25px;
+      font-size: 20px; }
+      .pie-de-pagina .grupo-1 h2 .red-social a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fffffff5;
+        margin-right: 10px;
+        background-color: #ee0a0a;
+        text-align: center;
+        transition: all 300ms ease-in-out; }
+        .pie-de-pagina .grupo-1 h2 .red-social a:hover {
+          color: #070707; }
+        .pie-de-pagina .grupo-1 h2 .red-social a .box figure {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .pie-de-pagina .grupo-1 h2 .red-social a .box figure img {
+            width: 150px; }
+
+.pie-de-pagina .grupo-2 {
+  background-color: #ee0a0a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #f2eff5; }
+  .pie-de-pagina .grupo-2 small {
+    font-size: 15px; }
+
+/* Trabajo en Galeria */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 5px;
+  padding: 5px;
+  grid-auto-flow: dense;
+  background-color: #ee0a0a; }
+
+.galeria--grid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.grid-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .grid-items:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+    .grid-items:hover:nth-child(4) {
+      grid-column-start: span 2; }
+
+/* Trabajo en Viandas */
+.menu-vianda {
+  background-color: #ee0a0a;
+  color: #f2eff5;
+  font-size: 15px; }
+
+.galeria-vianda {
+  display: block;
+  margin: 10px auto; }
+
+.foto-vianda {
+  width: 30%;
+  align-self: center; }
+
+.light {
+  width: 100%;
+  height: 50%; }
+
+@media screen and (min-width: 768px) {
+  .pie-de-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0; } }
