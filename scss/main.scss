@@ -64,6 +64,7 @@
 .embed-container {
     position: relative;
     width: 100%;
+    height: 100%;
     padding-bottom: 56,100%;
 
     .container {
@@ -71,7 +72,6 @@
     top:0;
     left: 0;
     width: 100%;
-    height: 100%;
     border: 0;
 }}
 
@@ -110,10 +110,23 @@
     grid-gap: 30px;
     padding: 35px 0;
 
-    h2 {
+            h2 {
         color: #f2eff5;
         margin-bottom: 25px;
         font-size: 20px;
+
+            }}}
+    .pie-de-pagina{
+    
+        .box figure {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            img {
+            width: 150px;
     
     .red-social a  {
         display: inline-block;
@@ -130,17 +143,7 @@
     &:hover {
         color: #070707;
     }
-
-    .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-    width: 150px;
-    }}}}}}
+    }}}}
 
 
 .pie-de-pagina .grupo-2 {

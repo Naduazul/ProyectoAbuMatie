@@ -57,13 +57,13 @@
 .embed-container {
   position: relative;
   width: 100%;
+  height: 100%;
   padding-bottom: 56,100%; }
   .embed-container .container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     border: 0; }
 
 .video {
@@ -98,27 +98,28 @@
       color: #f2eff5;
       margin-bottom: 25px;
       font-size: 20px; }
-      .pie-de-pagina .grupo-1 h2 .red-social a {
-        display: inline-block;
-        text-decoration: none;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        color: #fffffff5;
-        margin-right: 10px;
-        background-color: #f80707;
-        text-align: center;
-        transition: all 300ms ease-in-out; }
-        .pie-de-pagina .grupo-1 h2 .red-social a:hover {
-          color: #070707; }
-        .pie-de-pagina .grupo-1 h2 .red-social a .box figure {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          .pie-de-pagina .grupo-1 h2 .red-social a .box figure img {
-            width: 150px; }
+
+.pie-de-pagina .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .pie-de-pagina .box figure img {
+    width: 150px; }
+    .pie-de-pagina .box figure img .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #fffffff5;
+      margin-right: 10px;
+      background-color: #f80707;
+      text-align: center;
+      transition: all 300ms ease-in-out; }
+      .pie-de-pagina .box figure img .red-social a:hover {
+        color: #070707; }
 
 .pie-de-pagina .grupo-2 {
   background-color: #f80707;
