@@ -20,19 +20,27 @@
 
 /* Estilos en mi Header en Home */  
 
+// Mixin
+
+@mixin ancho($width, $height) {
+    height: $height;
+    width: $width;
+}
 .home-header  {
         div {
     background-color: $color-general;
     background-size:auto;
     background-repeat:no-repeat;
     background-position:100px;
+
         h1 {
+            @include ancho (100%, 50%);
     color:#f2eff5;
-     background-color: #c50606;
+    background-color: #c50606;
     font-size: 60px;
-    font-weight:bold;
     font-family:'Send Flowers';
     text-align: center;
+
      img {
         object-fit:contain;
          height: 100%;
@@ -119,35 +127,56 @@
         font-size: 20px;
 
             }}}
-    .pie-de-pagina{
     
-        .grupo-1 {
+.pie-de-pagina{
+    
+      .grupo-1 {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             text-align: center;
-            color: #f2eff5;
+            color: #f2eff5 !important;
         
-            img {
+      img {
             width: 150px;
     
-    .red-social a {
+    .red-social  {
         display: inline-block;
         text-decoration: none;
         width: 45px;
         height: 45px;
         line-height: 45px;
-        color: black !important;
+        
         margin-right: 10px;
         background-color: $color-general;
         text-align: center;
         transition: all 300ms ease-in-out;
     
     &:hover {
-        color: #070707;
+        @extend %fondo;
+    }}}}}
+
+/* Maps*/
+
+$redes:(
+    fa-whatsapp: #000000,
+    fa-instagram: #000000,
+    fa-facebook: #000000);
+
+    @each $red, $color in $redes {
+        .fa-#{$red}{
+            color: $color;
+            border-radius: 10%;
+        }
     }
-    }}}}
+    
+/* Extend */
+
+    %fondo {
+        background-color: #c50606;
+    }
+
 
 
 .pie-de-pagina .grupo-2 {
@@ -239,4 +268,3 @@
     
 
 }}
-
