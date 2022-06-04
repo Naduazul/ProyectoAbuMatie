@@ -1,3 +1,21 @@
+
+<?php
+
+$destino="laabuelamatie@hotmail.com";
+$nombre=$_POST["nombre"];
+$Email=$_POST["Email"];
+$telefono=$_POST["telefono"];
+$mensaje=$_POST["mensaje"];
+
+$contenido= "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " . $tefelono . "\nMensaje " . $mensaje;
+
+mail($destino, "Contacto", $contenido);
+
+header("Location:index.html")
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,3 +213,8 @@
 <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </html>
+
+
+
+
+
