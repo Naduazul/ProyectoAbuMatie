@@ -196,10 +196,10 @@ img {
 .mensaje-inicial {
     font-size:20px;
     font-family: 'Comfortaa', cursive;
-    font-weight: 200;
-    padding: 10px 25px;
-    background-color: $color-general;
-    color:#f2eff5;
+    font-weight: 100;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    color: $color-general;
 
     span{
     font-size: 30px;
@@ -208,60 +208,9 @@ img {
     padding-right: 15px;
 }}
 
-/*
-.seccion-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: $color-general;
-    padding: 20px ;
-    font-size: 20px;
-    font-family: 'Comfortaa', cursive;
-    font-style: italic;
-    font-weight: bold;
-    color:#fff;
-
-.embed-container {
-    width: 100%;
-    height: 100%;
-    
-    .container {
-    top:0;
-    left: 0;
-    width: 100%;
-    border: 0;
-}}}*/
-
-.video {
-    position: relative;
-    width: 100%;
-    
-.player {
-    top:0;
-    left: 0;
-    width: 100%;
-    border: 0; 
-    
-}}
-
-/*.formulario {
-    width: 200px;
-    margin: auto;
-    background-color: $color-general;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 12px;
-
-    .boton-aceptar {
-        width: 200px !important;
-        height: 50px !important;
-        text-align: center;
-        border-radius: 20px !important;
-
-    }
-}*/
 
 .formulario {
+    background-color: #fff;
     width: 500px;
     max-width: 100%;
     margin-top: 30px;
@@ -316,11 +265,33 @@ img {
     cursor: pointer;
     border:none;
     }
-    
+
+    .fijar {
+        margin-top:-140px;
+       }
+    .seccion-2 {
+        display: grid;
+        grid-template-areas: 
+        "contact"
+        "googlemaps"
+        "video";
+
+        .contact {
+            grid-area: contact;
+        }
+        .googlemaps {
+            grid-area: googlemaps;
+                }
+        .video {
+            grid-area: video;
+        }}
+            
+
 
 
 
 /* Estilos a mi Footer */
+
 .pie-de-pagina {
     width:100%;
     background-color: $color-general;
@@ -331,26 +302,24 @@ img {
     grid-gap: 30px;
     padding: 35px 0;
 
-            h2 {
+     h2 {
         color: #f2eff5;
         margin-bottom: 25px;
         font-size: 20px;
 
-            }}}
+}}}
     
-.pie-de-pagina{
+.pie-de-pagina {
     
       .grupo-1 {
             width: 100%;
             height: 100%;
-            display: flex;
             justify-content: center;
             text-align: center;
             color: #f2eff5 !important;
         
       img {
             width: 150px;
-      }}}
 
     .red-social  {
         display: inline-block;
@@ -361,7 +330,7 @@ img {
         background-color: $color-general;
         text-align: center;
         
-    }
+    }}}}
    
     /*Mapas*/
 
@@ -396,8 +365,8 @@ $redes: (
 
 
 
-/* Trabajo en Galeria */
-.card-group {
+/* Trabajo en Galeria 
+.card-deck {
     gap: 5px;
     padding: 5px;
     grid-auto-flow: dense;
@@ -418,8 +387,26 @@ $redes: (
     filter:opacity(0.9);
     transform: scale(1.04);
 
-}}
+}}*/
 
+.header-galeria {
+    color: $color-general;
+    font-family: 'Comfortaa', cursive;
+    text-align: center; 
+    font-size: 30px;
+    padding:30px;
+    margin-top: 30px;
+}
+.galeria-card {
+    padding: 10px;
+}
+
+.img-style {
+    margin-top: -100px;
+    border: 5px solid #ffffff;
+    width: 180px;
+    height: 180px;
+}
 
 
 /* Trabajo en Viandas */
@@ -456,7 +443,7 @@ h2 {
 
 
 
-@media screen and (min-width: 768px) { 
+@media screen and (max-width: 768px) { 
     .pie-de-pagina .grupo-1 {
         width: 100%;
         max-width: 1200px;
@@ -465,15 +452,10 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
         padding: 45px 0;
-    }
-    .seccion-2 {
-        display: grid;
-        grid-template-rows: 100% 100%;
-        background-color: $color-general;
-    }
-}
+    }}
+   
+@media screen and (min-width: 768px) {
 
-@media screen and (max-width: 768px) {
     .header-nosotros {
         text-align: center;
     }
@@ -489,4 +471,31 @@ h2 {
     .container-nosotros .related-post {
         grid-column: 1/-1;
     }
-}
+    
+    .seccion-2 {
+        background-color: #fff !important;
+        padding: 10px;
+        
+        grid-template-areas: 
+            "contact googlemaps"
+            "contact video";
+        }
+        
+        .contact {
+            grid-area: contact; 
+        }
+
+        .googlemaps {
+            width: 100%;
+            grid-area: googlemaps;
+
+            iframe {
+            width:100% !important;
+        }}
+
+        .video {
+            grid-area: video;
+            width: 100%;
+            height: auto;
+        }
+    }

@@ -31,6 +31,7 @@
 </head>
 
 <body>
+  <div class="contenedor-responsive">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -39,7 +40,7 @@
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown">
        <ul class="navbar-nav">
          <li class="nav-item">
           <button type="button" class="btn btn-outline-secondary">
@@ -71,6 +72,19 @@
     </div>
     </div>
     </nav>
+
+    <main>
+      <section class="seccion-1">
+          <div class="mensaje-inicial">
+    
+              <p> Bienvenidos a <span>La Abuela Matie Rotiseria</span>, un emprendimiento familiar de gran prestigio en el sector gastronómico y atendido por sus dueños. </p>
+              <p>Te ofrecemos platos confeccionados para sentirte como si estuvieras en tu casa.</p>
+              <p> Nuestros sabores  te van a llevar a aquellos recuerdos de los domingos en familia, disfrutando del placer de comer rico.</p>
+              <p>Contamos con servicio de delivery.
+              </p>
+          </div>
+      </section>
+    </main>
     
     <header class= "home-header">
     
@@ -105,21 +119,9 @@
                                   </div>
                                         </header>
     
-    <main>
-      <section class="seccion-1">
-          <div class="mensaje-inicial">
-    
-              <p> Bienvenidos a <span>La Abuela Matie Rotiseria</span>, un emprendimiento familiar de gran prestigio en el sector gastronómico y atendido por sus dueños. </p>
-              <br>
-              <p>Te ofrecemos platos confeccionados para sentirte como si estuvieras en tu casa.</p><br>
-                  <span>Nuestros sabores</span> <br><p> te van a llevar a aquellos recuerdos de los domingos en familia, disfrutando del placer de comer rico.</p>
-    <br>
-              <p>Contamos con servicio de delivery.
-              </p>
-          </div>
-      </section>
-  
-<section class="fondo-formulario">
+<aside>
+<section class="seccion-2">
+  <div class="contact">
   <form action="enviar.php" method="post" class="formulario">
     <h1 class="formulario__titulo">Contáctenos</h1>
       <input type="text" name="nombre" class="formulario__input">
@@ -132,14 +134,17 @@
       <label for="" name="mensaje" class="formulario__label">Deje su mensaje</label>
       <input type="submit" class="formulario__submit">
   </form>
-</section>
-    
-<section class="video">
-  <div>
-    <iframe class="player" src="https://www.youtube.com/embed/-aF8lH-QxYs" frameborder="0" allowfullscreen></iframe>
+</div>   
+
+<div class="googlemaps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.192187814215!2d-58.294466385189075!3d-34.77593677413691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32c10ac694d27%3A0x4a1b0aba39414c4f!2sC.%20881%205003%2C%20Villa%20la%20Florida%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654460604063!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+  <div class="video">
+    <iframe class="player" src="https://www.youtube.com/embed/-aF8lH-QxYs" style="border:0;" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
-   </main>
+</aside>
 
     
     <footer class="pie-de-pagina">
@@ -181,17 +186,17 @@
             <small>&copy; 2022 <b>La Abu Matie</b> - Todos los derechos reservados. </small>     
     </div>
     </footer>
-    
+  </div> 
     
   
 
-    
-</body>
-<script src="form.js"></script>
-
-<!-- Link a script de bootstrap --> 
+  <!-- Link a script de bootstrap --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+<script src="js/form.js"></script>
+
 
 </html>
