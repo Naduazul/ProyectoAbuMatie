@@ -2,7 +2,7 @@
   padding: 20px;
   font-size: 25px; }
 
-/* Estilos Generales */
+/*------------ Estilos Generales ------------- */
 * {
   margin: 0;
   padding: 0;
@@ -43,14 +43,14 @@
 .container-nosotros .header-nosotros,
 .container-nosotros .pie-de-pagina {
   grid-column: 1/6;
-  background-color: #1f1e1e;
+  background-color: #232222;
   color: #fff; }
 
 .container-nosotros > .content {
   grid-column: span 3; }
 
 .content > .article {
-  background-color: #1f1e1e;
+  background-color: #232222;
   padding: 20px;
   margin-top: 5px;
   color: #fff; }
@@ -61,7 +61,7 @@
 
 .container-nosotros > .sidebar {
   grid-column: span 2;
-  background-color: #1f1e1e;
+  background-color: #232222;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@
   margin-top: 5px; }
 
 .container-nosotros > .post {
-  background-color: #1f1e1e;
+  background-color: #232222;
   color: #fff;
   padding: 20px;
   height: 200px;
@@ -98,13 +98,10 @@
   background-color: #ffffff; }
 
 /*Estilo en mi Navbar*/
-.navbar {
-  width: 100%;
-  height: 150px; }
-  .navbar img {
-    object-fit: contain;
-    height: 20%;
-    width: 20%; }
+.navbar-brand img {
+  object-fit: contain;
+  height: 20%;
+  width: 20%; }
 
 /* Estilos a Nosotros */
 .grid {
@@ -115,7 +112,7 @@
     grid-column: span 2; }
     .grid .element-1 div {
       background-color: #ffffff;
-      color: #1f1e1e;
+      color: #232222;
       font-size: large;
       font-family: Comfortaa, cursive;
       padding: 10px; }
@@ -128,7 +125,7 @@ img {
 
 /* Estilos en mi Header en Home */
 .home-header div {
-  background-color: #1f1e1e;
+  background-color: #232222;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 100px; }
@@ -151,7 +148,7 @@ img {
   font-weight: 100;
   padding: 5px 20px;
   background-color: #ffffff;
-  color: #1f1e1e; }
+  color: #232222; }
   .mensaje-inicial span {
     font-size: 30px;
     font-family: 'Send Flowers';
@@ -159,7 +156,7 @@ img {
     padding-right: 15px; }
 
 .formulario {
-  background-color: #fff;
+  text-align: left;
   width: 500px;
   max-width: 100%;
   margin-top: 30px;
@@ -170,7 +167,7 @@ img {
 .formulario__titulo {
   text-align: center;
   margin-top: 0;
-  padding: 20px;
+  padding: 40px;
   color: rgba(0, 0, 0, 0.7); }
 
 .formulario__input,
@@ -195,10 +192,10 @@ img {
 .formulario__label {
   padding-left: 15px;
   position: absolute;
-  margin-top: -85px;
+  margin-top: -95px;
   z-index: -20;
-  color: rgba(0, 0, 0, 0.5);
-  transition: all 0.2s; }
+  color: rgba(56, 55, 55, 0.5);
+  transition: all 0.3s; }
 
 .formulario__submit {
   background: rgba(0, 0, 0, 0.7);
@@ -219,11 +216,14 @@ img {
     grid-area: googlemaps; }
   .seccion-2 .video {
     grid-area: video; }
+    .seccion-2 .video iframe {
+      width: 500px;
+      height: auto; }
 
 /* Estilos a mi Footer */
 .pie-de-pagina {
   width: 100%;
-  background-color: #1f1e1e; }
+  background-color: #232222; }
   .pie-de-pagina .grupo-1 {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
@@ -248,7 +248,7 @@ img {
       height: 45px;
       line-height: 45px;
       margin-right: 10px;
-      background-color: #1f1e1e;
+      background-color: #232222;
       text-align: center; }
 
 /*Mapas*/
@@ -258,7 +258,7 @@ img {
   text-decoration: none;
   transition: all 300ms ease-in-out; }
   .fa-fa-whatsapp:hover {
-    background-color: #1f1e1e; }
+    background-color: #232222; }
 
 .fa-fa-instagram {
   color: #ffffff;
@@ -266,7 +266,7 @@ img {
   text-decoration: none;
   transition: all 300ms ease-in-out; }
   .fa-fa-instagram:hover {
-    background-color: #1f1e1e; }
+    background-color: #232222; }
 
 .fa-fa-facebook {
   color: #ffffff;
@@ -274,7 +274,7 @@ img {
   text-decoration: none;
   transition: all 300ms ease-in-out; }
   .fa-fa-facebook:hover {
-    background-color: #1f1e1e; }
+    background-color: #232222; }
 
 .pie-de-pagina .grupo-2 {
   background-color: #666;
@@ -284,31 +284,9 @@ img {
   .pie-de-pagina .grupo-2 small {
     font-size: 15px; }
 
-/* Trabajo en Galeria 
-.card-deck {
-    gap: 5px;
-    padding: 5px;
-    grid-auto-flow: dense;
-    background-color: $color-general;
- }
-    
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    transition: transform 0.3s ease-in-out;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-&:hover {
-    filter:opacity(0.9);
-    transform: scale(1.04);
-
-}}*/
+/* Trabajo en Galeria }*/
 .header-galeria {
-  color: #1f1e1e;
+  color: #232222;
   font-family: 'Comfortaa', cursive;
   text-align: center;
   font-size: 30px;
@@ -317,12 +295,28 @@ img {
 
 .galeria-card {
   padding: 10px; }
+  .galeria-card .img-style {
+    margin-top: -100px;
+    border: 5px solid #ffffff;
+    width: 180px;
+    height: 180px; }
 
-.img-style {
-  margin-top: -100px;
-  border: 5px solid #ffffff;
-  width: 180px;
-  height: 180px; }
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .card:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+  .card .card-body {
+    gap: 5px;
+    padding: 5px;
+    grid-auto-flow: dense; }
 
 /* Trabajo en Viandas */
 .menu-vianda {
@@ -338,7 +332,7 @@ img {
     font-family: 'Comfortaa', cursive;
     padding: 10px; }
     .menu-vianda div:hover {
-      border: 3px solid #1f1e1e; }
+      border: 3px solid #232222; }
 
 img {
   width: 100%;
@@ -351,7 +345,8 @@ h2 {
   text-align: center;
   padding: 20px; }
 
-@media screen and (max-width: 768px) {
+/* Media queries */
+@media screen and (min-width: 992px) {
   .pie-de-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
@@ -359,9 +354,13 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0; } }
+    padding: 45px 0; }
+  .seccion-2 {
+    text-align: center;
+    padding: 20px;
+    grid-template-areas: "contact googlemaps" "contact video"; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 976px) {
   .header-nosotros {
     text-align: center; }
   .container-nosotros .content {
@@ -369,19 +368,4 @@ h2 {
   .container-nosotros .sidebar {
     grid-column: 1/6; }
   .container-nosotros .related-post {
-    grid-column: 1/-1; }
-  .seccion-2 {
-    background-color: #fff !important;
-    padding: 10px;
-    grid-template-areas: "contact googlemaps" "contact video"; }
-  .contact {
-    grid-area: contact; }
-  .googlemaps {
-    width: 100%;
-    grid-area: googlemaps; }
-    .googlemaps iframe {
-      width: 100% !important; }
-  .video {
-    grid-area: video;
-    width: 100%;
-    height: auto; } }
+    grid-column: 1/-1; } }

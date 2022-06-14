@@ -8,13 +8,14 @@
     padding: 0;
 }
 
-/* Estilos Generales */
+/*------------ Estilos Generales ------------- */
 * {
    @include reset-pm();
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
+
 
 .body-fondo {
     background: 
@@ -129,17 +130,13 @@
 
 
 /*Estilo en mi Navbar*/
-.navbar {
-    width: 100%;
-    height: 150px;
 
-    img {
+    .navbar-brand img {
         object-fit:contain;
          height: 20%;
           width: 20%;
+ }
 
-    }
-}
 
 /* Estilos a Nosotros */
 .grid {
@@ -210,7 +207,8 @@ img {
 
 
 .formulario {
-    background-color: #fff;
+   
+    text-align: left;
     width: 500px;
     max-width: 100%;
     margin-top: 30px;
@@ -222,7 +220,7 @@ img {
     .formulario__titulo {
     text-align: center;
     margin-top: 0;
-    padding:20px;
+    padding:40px;
     color: rgba(0,0,0,0.7);
     }
 
@@ -232,6 +230,7 @@ img {
     display: block;
     width: 100%;
     font-size: 1.3em;
+    
     }
 
     .formulario__input {
@@ -239,6 +238,7 @@ img {
     background: rgba(0,0,0,0.2);
     border: 1px solid rgba(0,0,0,0.3);
     margin-bottom: 40px;
+    
     }
 
     .formulario__input:focus {
@@ -250,12 +250,13 @@ img {
     }
     
     .formulario__label {
+    
     padding-left: 15px;
     position: absolute;
-    margin-top: -85px;
+    margin-top: -95px;
     z-index: -20;
-    color: rgba(0,0,0,0.5);
-    transition: all 0.2s;
+    color: rgba(56, 55, 55, 0.5);
+    transition: all 0.3s;
     }
 
     .formulario__submit {
@@ -269,12 +270,16 @@ img {
     .fijar {
         margin-top:-140px;
        }
-    .seccion-2 {
-        display: grid;
-        grid-template-areas: 
+
+.seccion-2 {
+    display: grid;
+    
+
+    grid-template-areas: 
         "contact"
         "googlemaps"
         "video";
+ 
 
         .contact {
             grid-area: contact;
@@ -284,7 +289,11 @@ img {
                 }
         .video {
             grid-area: video;
-        }}
+            iframe {
+                width:500px;
+                height: auto;
+            }
+        }}  
             
 
 
@@ -296,7 +305,7 @@ img {
     width:100%;
     background-color: $color-general;
 
-     .grupo-1 {
+    .grupo-1 {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
@@ -311,7 +320,7 @@ img {
     
 .pie-de-pagina {
     
-      .grupo-1 {
+    .grupo-1 {
             width: 100%;
             height: 100%;
             justify-content: center;
@@ -331,7 +340,7 @@ img {
         text-align: center;
         
     }}}}
-   
+
     /*Mapas*/
 
 $redes: (
@@ -350,8 +359,6 @@ $redes: (
     }
 }}
 
-
-
 .pie-de-pagina .grupo-2 {
     background-color:#666;
     padding: 15px 10px;
@@ -365,14 +372,26 @@ $redes: (
 
 
 
-/* Trabajo en Galeria 
-.card-deck {
-    gap: 5px;
-    padding: 5px;
-    grid-auto-flow: dense;
-    background-color: $color-general;
- }
-    
+/* Trabajo en Galeria }*/
+.header-galeria {
+    color: $color-general;
+    font-family: 'Comfortaa', cursive;
+    text-align: center; 
+    font-size: 30px;
+    padding:30px;
+    margin-top: 30px;
+}    
+.galeria-card {
+    padding: 10px;
+
+
+.img-style {
+    margin-top: -100px;
+    border: 5px solid #ffffff;
+    width: 180px;
+    height: 180px;
+}}
+
 .card {
     display: flex;
     align-items: center;
@@ -387,26 +406,17 @@ $redes: (
     filter:opacity(0.9);
     transform: scale(1.04);
 
-}}*/
+}
+.card-body {
+    gap: 5px;
+    padding: 5px;
+    grid-auto-flow: dense;
+    
+ }}
 
-.header-galeria {
-    color: $color-general;
-    font-family: 'Comfortaa', cursive;
-    text-align: center; 
-    font-size: 30px;
-    padding:30px;
-    margin-top: 30px;
-}
-.galeria-card {
-    padding: 10px;
-}
 
-.img-style {
-    margin-top: -100px;
-    border: 5px solid #ffffff;
-    width: 180px;
-    height: 180px;
-}
+
+
 
 
 /* Trabajo en Viandas */
@@ -433,6 +443,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 h2 {
     font-family: 'Comfortaa', cursive; 
     font-size: 40px;
@@ -442,8 +453,10 @@ h2 {
 }
 
 
+/* Media queries */
 
-@media screen and (max-width: 768px) { 
+@media screen and (min-width: 992px) {
+
     .pie-de-pagina .grupo-1 {
         width: 100%;
         max-width: 1200px;
@@ -452,10 +465,22 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
         padding: 45px 0;
-    }}
+    }
+    .seccion-2 {
+        text-align: center;
+        padding: 20px;
+    
+        grid-template-areas: 
+            "contact googlemaps"
+            "contact video";
+        }
+}    
    
-@media screen and (min-width: 768px) {
+ 
+    
 
+@media screen and (min-width: 976px) {
+    
     .header-nosotros {
         text-align: center;
     }
@@ -471,31 +496,7 @@ h2 {
     .container-nosotros .related-post {
         grid-column: 1/-1;
     }
+
+
+}  
     
-    .seccion-2 {
-        background-color: #fff !important;
-        padding: 10px;
-        
-        grid-template-areas: 
-            "contact googlemaps"
-            "contact video";
-        }
-        
-        .contact {
-            grid-area: contact; 
-        }
-
-        .googlemaps {
-            width: 100%;
-            grid-area: googlemaps;
-
-            iframe {
-            width:100% !important;
-        }}
-
-        .video {
-            grid-area: video;
-            width: 100%;
-            height: auto;
-        }
-    }
