@@ -360,7 +360,7 @@ h2 {
     padding: 20px;
     grid-template-areas: "contact googlemaps" "contact video"; } }
 
-@media screen and (min-width: 976px) {
+@media screen and (max-width: 768px) {
   .header-nosotros {
     text-align: center; }
   .container-nosotros .content {

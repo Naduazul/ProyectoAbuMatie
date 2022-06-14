@@ -127,8 +127,6 @@
     }
 
 
-
-
 /*Estilo en mi Navbar*/
 
     .navbar-brand img {
@@ -296,9 +294,6 @@ img {
         }}  
             
 
-
-
-
 /* Estilos a mi Footer */
 
 .pie-de-pagina {
@@ -367,10 +362,7 @@ $redes: (
 
  small {
     font-size: 15px;
-
  }}
-
-
 
 /* Trabajo en Galeria }*/
 .header-galeria {
@@ -413,10 +405,6 @@ $redes: (
     grid-auto-flow: dense;
     
  }}
-
-
-
-
 
 
 /* Trabajo en Viandas */
@@ -475,11 +463,9 @@ h2 {
             "contact video";
         }
 }    
-   
- 
-    
 
-@media screen and (min-width: 976px) {
+
+@media screen and (max-width: 768px) {
     
     .header-nosotros {
         text-align: center;
