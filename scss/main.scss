@@ -136,31 +136,6 @@
  }
 
 
-/* Estilos a Nosotros */
-.grid {
-    display: grid;
-
-    grid-template-columns: repeat(1fr,1fr);
-    grid-gap: 1em;
-
-.element-1 {
-    grid-column: span 2;
-
-   div {
-    background-color: #ffffff;
-    color: $color-general;
-    font-size: large;
-    font-family: Comfortaa, cursive;
-    padding: 10px;
-
-   &:hover {
-    border: 2px solid #000000;
-}}}}
-
-img {
-    width: 100%;
-    height: auto;
-}
 
 
 /* Estilos en mi Header en Home */  
@@ -466,23 +441,21 @@ h2 {
 
 
 @media screen and (max-width: 768px) {
-    
+
     .header-nosotros {
         text-align: center;
     }
 
     .container-nosotros .content {
-        grid-column: 1/-1;
+        grid-column: 1/6;
     }
 
     .container-nosotros .sidebar {
-        grid-column: 1/6;
+        grid-column: 1/-1;
     }
 
     .container-nosotros .related-post {
         grid-column: 1/-1;
     }
-
-
 }  
     
